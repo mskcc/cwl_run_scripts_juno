@@ -8,13 +8,13 @@ cd toil
 git checkout release/3.20.0a1-MSK # mskcc repo has minor change in lsf.py vs. main DataBiosphere toil
 make develop extras=[cwl]
 ```
-3. Clone the CWLs repo in some directory
+3. Clone which CWLS you want to use into some directory, for example https://github.com/mskcc/cwls
  ```
 cd ..
 git clone https://github.com/mskcc/cwls
 ```
 4. Export LSF args `export TOIL_LSF_ARGS='-sla CMOPI'`
-5. Load Singularity with `module load singularity/3.1.1`
+5. Load Singularity with `module load singularity/3.3.0`
 
 ## Running with cwltool
 
