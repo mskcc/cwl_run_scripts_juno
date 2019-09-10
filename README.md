@@ -5,7 +5,8 @@
 ```
 git clone https://github.com/mskcc/toil.git
 cd toil
-git checkout release/3.20.0a1-MSK # mskcc repo has minor change in lsf.py vs. main DataBiosphere toil
+git checkout release/3.20.0a1-MSK # mskcc repo has minor change in lsf.py vs. main DataBiosphere toil'
+make prepare
 make develop extras=[cwl]
 ```
 3. Clone which CWLS you want to use into some directory, for example https://github.com/mskcc/cwls
