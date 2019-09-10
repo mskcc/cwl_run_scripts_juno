@@ -40,6 +40,8 @@ Pre-requisites:
 ```
 export TOIL_LSF_ARGS='-sla Short'
 ```
+You can also add other `bsub` parameters, like walltime `-W`, to `TOIL_LSF_ARGS`.
+
 2. Load Singularity with 
 ```
 module load singularity/3.3.0
