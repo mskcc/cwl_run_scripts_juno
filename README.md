@@ -44,13 +44,14 @@ export TOIL_LSF_ARGS='-sla Short'
 ```
 module load singularity/3.3.0
 ```
-
-Running:
-1. In your working directory, make the `job-stores` and `work` directories:
+3. In your working directory, make the `job-stores` and `work` directories:
 ```
 mkdir job-stores work
 ```
-2. Assuming you have a YAML file ready, you can submit your job to the cluster right away.
+
+Running:
+
+1. Assuming you have a YAML file ready, you can submit your job to the cluster right away.
 ```
 bash run_script_lsf.sh <path to CWL> <path to YAML> <output directory name>
 ```
