@@ -3,7 +3,11 @@
 Requirements:
 - python 2.7.10
 
-1. Create a `virtualenv venv` and `source venv/bin/activate` 
+1. In some working directory of your choosing, create a `virtualenv venv` and `source venv/bin/activate` 
+```
+virtualenv venv
+source venv/bin/activate
+```
 2. Install toil.
 ```
 git clone https://github.com/mskcc/toil.git
@@ -14,9 +18,9 @@ make develop extras=[cwl]
 3. Clone which CWLS you want to use into some directory, for example https://github.com/mskcc/cwls
  ```
 cd ..
-git clone https://github.com/mskcc/cwls
+git clone --recursive https://github.com/mskcc/cwls
 ```
-4. Export LSF args `export TOIL_LSF_ARGS='-sla CMOPI'`
+4. Export LSF args if you have an SLA, for example `export TOIL_LSF_ARGS='-sla CMOPI'`
 5. Load Singularity with `module load singularity/3.3.0`
 
 ## Running with cwltool
@@ -31,7 +35,16 @@ If you have the input parameters in a YAML, you can provide that, as well:
 
 ## Running with cwltoil
 
-To be added...
+You can have toil submit jobs to the JUNO cluster for you.
+
+1. In your working directory, make the `job-stores` and `work` directories:
+```
+mkdir job-stores work
+```
+2. Assuming you have a YAML file ready, you can submit your job to the cluster right away.
+```
+bash run_script_lsf.sh <path to CWL> <path to YAML> <output directory name>
+```
 
 ## Adding a Singularity Pull directory
 
