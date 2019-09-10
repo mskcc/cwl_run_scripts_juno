@@ -20,8 +20,6 @@ make develop extras=[cwl]
 cd ..
 git clone --recursive https://github.com/mskcc/cwls
 ```
-4. Export LSF args if you have an SLA, for example `export TOIL_LSF_ARGS='-sla CMOPI'`
-5. Load Singularity with `module load singularity/3.3.0`
 
 ## Running with cwltool
 
@@ -37,6 +35,11 @@ If you have the input parameters in a YAML, you can provide that, as well:
 
 You can have toil submit jobs to the JUNO cluster for you.
 
+Pre-requisites:
+1. If you have an SLA, export LSF args to `TOIL_LSF_ARGS`. For SLA Short, for example `export TOIL_LSF_ARGS='-sla Short'`
+2. Load Singularity with `module load singularity/3.3.0`
+
+Running:
 1. In your working directory, make the `job-stores` and `work` directories:
 ```
 mkdir job-stores work
