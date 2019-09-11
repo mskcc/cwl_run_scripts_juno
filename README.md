@@ -55,7 +55,8 @@ Running:
 
 1. Assuming you have a YAML file ready, you can submit your job to the cluster right away.
 ```
-bash run_script_lsf.sh <path to CWL> <path to YAML> <output directory name>
+## output directory name is relative to current working directory
+bash run_script_lsf.sh <path to CWL> <path to YAML> <output directory name> 
 ```
 
 ## Adding a Singularity Pull directory
