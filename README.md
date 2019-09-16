@@ -2,6 +2,16 @@
 
 Requirements:
 - python 2.7.10
+- virtualenv
+
+If you don't have `virtualenv`, you can install it with the following:
+
+```
+curl -O https://pypi.python.org/packages/d4/0c/9840c08189e030873387a73b90ada981885010dd9aea134d6de30cd24cb8/virtualenv-15.1.0.tar.gz
+tar xvfz virtualenv-15.1.0.tar.gz
+cd virtualenv-15.1.0
+python virtualenv.py ~/venv
+```
 
 1. In some working directory of your choosing, create a `virtualenv venv` and `source venv/bin/activate` 
 ```
