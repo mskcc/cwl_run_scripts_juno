@@ -7,9 +7,9 @@ Requirements:
 If you don't have `virtualenv`, you can install it with the following:
 
 ```
-curl -O https://pypi.python.org/packages/d4/0c/9840c08189e030873387a73b90ada981885010dd9aea134d6de30cd24cb8/virtualenv-15.1.0.tar.gz
-tar xvfz virtualenv-15.1.0.tar.gz
-cd virtualenv-15.1.0
+curl -O https://files.pythonhosted.org/packages/66/f0/6867af06d2e2f511e4e1d7094ff663acdebc4f15d4a0cb0fed1007395124/virtualenv-16.7.5.tar.gz
+tar xvfz virtualenv-16.7.5.tar.gz
+cd virtualenv-16.7.5
 python virtualenv.py ~/venv
 ```
 
