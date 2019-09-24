@@ -2,7 +2,12 @@
 
 Requirements:
 - python 2.7.10
-- virtualenv
+- A way to make a virtualenv
+
+1. In some working directory of your choosing, create a `virtualenv venv` and `source venv/bin/activate` 
+```
+virtualenv venv
+```
 
 If you don't have `virtualenv`, you can install it with the following:
 
@@ -10,14 +15,15 @@ If you don't have `virtualenv`, you can install it with the following:
 curl -O https://files.pythonhosted.org/packages/66/f0/6867af06d2e2f511e4e1d7094ff663acdebc4f15d4a0cb0fed1007395124/virtualenv-16.7.5.tar.gz
 tar xvfz virtualenv-16.7.5.tar.gz
 cd virtualenv-16.7.5
-python virtualenv.py ~/venv
+python virtualenv.py venv
 ```
 
-1. In some working directory of your choosing, create a `virtualenv venv` and `source venv/bin/activate` 
+Then `source` it:
+
 ```
-virtualenv venv
 source venv/bin/activate
 ```
+
 2. Install toil.
 ```
 git clone https://github.com/mskcc/toil.git
