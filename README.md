@@ -77,7 +77,3 @@ Running:
 ## output directory name is relative to current working directory
 bash run_script_lsf.sh <path to CWL> <path to YAML> <output directory name> 
 ```
-
-## Adding a Singularity Pull directory
-
-To be added...
